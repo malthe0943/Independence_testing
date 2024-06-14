@@ -1,0 +1,5 @@
+useDynLib(mydHSIC, .registration=TRUE)
+export("compute_sigma", "gauss_kern", "gauss_kern_median", "linear_kern",
+       "compute_dHSIC")
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")
